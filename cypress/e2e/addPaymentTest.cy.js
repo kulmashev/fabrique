@@ -6,7 +6,7 @@ describe('Fabrique test2', () => {
        cy.get("[type='password']").type('admin')
        cy.get("[type='submit']").click()
    })
-   it('ТС1 Добавление платежа - доход', {
+   it('ТС2 Добавление платежа - доход', {
     "defaultCommandTimeout": 5000
 }, () => {
        cy.get('.pageLayout__actions > :nth-child(1) > .button').click()
@@ -30,7 +30,7 @@ describe('Fabrique test2', () => {
        cy.xpath("(//div[@class='select__caret multiselect__select'])[7]").click().type('бархатные{enter}')
        cy.xpath("(//button[@type='submit'])[1]").click()
    })
-   it('ТС2 Добавление платежа - расход', {
+   it('ТС3 Добавление платежа - расход', {
     "defaultCommandTimeout": 5000
 }, () => {
        cy.get('.pageLayout__actions > :nth-child(1) > .button').click()
